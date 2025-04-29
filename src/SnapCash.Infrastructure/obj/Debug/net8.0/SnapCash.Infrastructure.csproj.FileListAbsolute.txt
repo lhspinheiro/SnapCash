@@ -1,0 +1,17 @@
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Infrastructure.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Infrastructure.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Domain.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.csproj.AssemblyReference.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.csproj.CopyComplete
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/refint/SnapCash.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/ref/SnapCash.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Communication.pdb

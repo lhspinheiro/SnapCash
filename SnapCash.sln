@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9EB196FA-41A1-4FAD-A6A2-44171481CE2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Application", "src\SnapCash.Application\SnapCash.Application.csproj", "{43867E9C-BAD4-43B6-97BA-24FC1613B562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Communication", "src\SnapCash.Communication\SnapCash.Communication.csproj", "{1315709B-0ABB-47DE-8FF7-1E28FE5A7145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Domain", "src\SnapCash.Domain\SnapCash.Domain.csproj", "{50C63636-0437-42AA-A192-92B8DCA78AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Infrastructure", "src\SnapCash.Infrastructure\SnapCash.Infrastructure.csproj", "{4E2CF6D7-FC1B-4049-931C-E7F7343DDB78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Api", "src\SnapCash.Api\SnapCash.Api.csproj", "{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43867E9C-BAD4-43B6-97BA-24FC1613B562} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
+		{1315709B-0ABB-47DE-8FF7-1E28FE5A7145} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
+		{50C63636-0437-42AA-A192-92B8DCA78AE7} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
+		{4E2CF6D7-FC1B-4049-931C-E7F7343DDB78} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
+		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43867E9C-BAD4-43B6-97BA-24FC1613B562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43867E9C-BAD4-43B6-97BA-24FC1613B562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43867E9C-BAD4-43B6-97BA-24FC1613B562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43867E9C-BAD4-43B6-97BA-24FC1613B562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1315709B-0ABB-47DE-8FF7-1E28FE5A7145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1315709B-0ABB-47DE-8FF7-1E28FE5A7145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1315709B-0ABB-47DE-8FF7-1E28FE5A7145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1315709B-0ABB-47DE-8FF7-1E28FE5A7145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C63636-0437-42AA-A192-92B8DCA78AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C63636-0437-42AA-A192-92B8DCA78AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C63636-0437-42AA-A192-92B8DCA78AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C63636-0437-42AA-A192-92B8DCA78AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2CF6D7-FC1B-4049-931C-E7F7343DDB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2CF6D7-FC1B-4049-931C-E7F7343DDB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2CF6D7-FC1B-4049-931C-E7F7343DDB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2CF6D7-FC1B-4049-931C-E7F7343DDB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

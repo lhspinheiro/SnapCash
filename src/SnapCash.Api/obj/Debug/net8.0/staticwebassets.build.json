@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "F93D8znf9jZQ1wbsccjHcmwsroJEdUgxnkmfnk+7C3w=",
+  "Source": "SnapCash.Api",
+  "BasePath": "_content/SnapCash.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

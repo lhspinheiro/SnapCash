@@ -1,0 +1,11 @@
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/bin/Debug/net8.0/SnapCash.Communication.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/bin/Debug/net8.0/SnapCash.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/bin/Debug/net8.0/SnapCash.Communication.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/refint/SnapCash.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/ref/SnapCash.Communication.dll

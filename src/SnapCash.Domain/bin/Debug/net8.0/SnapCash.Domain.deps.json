@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SnapCash.Domain/1.0.0": {
+        "dependencies": {
+          "SnapCash.Communication": "1.0.0"
+        },
+        "runtime": {
+          "SnapCash.Domain.dll": {}
+        }
+      },
+      "SnapCash.Communication/1.0.0": {
+        "runtime": {
+          "SnapCash.Communication.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SnapCash.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SnapCash.Communication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

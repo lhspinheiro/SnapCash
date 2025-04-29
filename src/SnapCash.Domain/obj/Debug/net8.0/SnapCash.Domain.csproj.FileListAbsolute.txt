@@ -1,0 +1,15 @@
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/bin/Debug/net8.0/SnapCash.Domain.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/bin/Debug/net8.0/SnapCash.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/bin/Debug/net8.0/SnapCash.Domain.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/refint/SnapCash.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/ref/SnapCash.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/bin/Debug/net8.0/SnapCash.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/bin/Debug/net8.0/SnapCash.Communication.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.csproj.AssemblyReference.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.csproj.CopyComplete
