@@ -1,1 +1,1 @@
-##  💸 API de transferência bancária 💰
+##  💸 API de transferências bancárias 💰

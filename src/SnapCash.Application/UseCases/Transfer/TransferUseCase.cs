@@ -23,7 +23,6 @@ public class TransferUseCase : ITransferUseCase
     public async Task <TransferResponseListJson> Execute(TransferRequest request)
     {
         
-        
        var pagador = await _appDbContext.Registers.FirstOrDefaultAsync(payer => payer.id == request.payerId);
        var recebedor = await _appDbContext.Registers.FirstOrDefaultAsync(payee => payee.id == request.payeeId);
 
@@ -31,7 +30,6 @@ public class TransferUseCase : ITransferUseCase
        {
            throw new Exception("Saldo insuficiente");
        }
-       
        
        var auth = await _authorizationService.Authorize();
 
