@@ -24,32 +24,15 @@ public class TransferUseCase : ITransferUseCase
     }
     public async Task <TransferResponseListJson> Execute(TransferRequest request)
     {
-        
        var pagador = await _appDbContext.Registers.FirstOrDefaultAsync(payer => payer.id == request.payerId);
        var recebedor = await _appDbContext.Registers.FirstOrDefaultAsync(payee => payee.id == request.payeeId);
 
-       if (pagador.UserType == UserType.Lojista)
+       if (pagador == null || recebedor == null)
        {
-           var error = "Lojistas não podem transferir dinheiro";
-           var errorsList = error.Split(',').ToList();
-           throw new ErrorOnValidationException(errorsList);
+           throw new ErrorOnValidationException(new List<string> {"Usuário não encontrado"});
        }
        
-       if (pagador.Saldo < request.valor)
-       {
-           var error = "Saldo Insuficiente";
-           var errorsList = error.Split(',').ToList();
-           throw new ErrorOnValidationException(errorsList);
-       }
-       
-       var auth = await _authorizationService.Authorize();
-
-       if (!auth)
-       {
-           var error = "Não autorizado";
-           var errorsList = error.Split(',').ToList();
-           throw new ErrorOnValidationException(errorsList);
-       }
+       await Validate(request, pagador, recebedor);
        
        pagador.debitar(request.valor);
        recebedor.creditar(request.valor);
@@ -57,7 +40,6 @@ public class TransferUseCase : ITransferUseCase
        var entity = _mapper.Map<Domain.Entities.Transfer>(request);
        entity.payer = pagador;
        entity.payee = recebedor;
-       
        
        await _appDbContext.Transfers.AddAsync(entity);
        await _appDbContext.SaveChangesAsync();
@@ -85,5 +67,25 @@ public class TransferUseCase : ITransferUseCase
                }
            }
        };
+    }
+
+    private async Task Validate(TransferRequest request, Domain.Entities.Register pagador, Domain.Entities.Register recebedor)
+    {
+        if (pagador.UserType == UserType.Lojista)
+        {
+            throw new ErrorOnValidationException(new List<string> { "Lojistas não podem transferir dinheiro" });
+        }
+       
+        if (pagador.Saldo < request.valor)
+        {
+            throw new ErrorOnValidationException(new List<string> { "Saldo Insuficiente" });
+        }
+       
+        var auth = await _authorizationService.Authorize();
+
+        if (!auth)
+        { 
+            throw new ErrorOnValidationException(new List<string> { "Não autorizado" });
+        }
     }
 }
