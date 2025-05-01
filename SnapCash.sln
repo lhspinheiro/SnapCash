@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Api", "src\SnapCash.Api\SnapCash.Api.csproj", "{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapCash.Exception", "src\SnapCash.Exception\SnapCash.Exception.csproj", "{9F59CB0F-B0DB-4652-B845-F420D18BAB13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,7 @@ Global
 		{50C63636-0437-42AA-A192-92B8DCA78AE7} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
 		{4E2CF6D7-FC1B-4049-931C-E7F7343DDB78} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
 		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
+		{9F59CB0F-B0DB-4652-B845-F420D18BAB13} = {9EB196FA-41A1-4FAD-A6A2-44171481CE2C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{43867E9C-BAD4-43B6-97BA-24FC1613B562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -45,5 +48,9 @@ Global
 		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBA4299C-CA18-4C75-9DF6-CF83165BBB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F59CB0F-B0DB-4652-B845-F420D18BAB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F59CB0F-B0DB-4652-B845-F420D18BAB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F59CB0F-B0DB-4652-B845-F420D18BAB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F59CB0F-B0DB-4652-B845-F420D18BAB13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

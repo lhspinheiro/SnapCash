@@ -1,0 +1,12 @@
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/bin/Debug/net8.0/SnapCash.Exception.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/bin/Debug/net8.0/SnapCash.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/bin/Debug/net8.0/SnapCash.Exception.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/SnapCash.Exception.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/SnapCash.Exception.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/SnapCash.Exception.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/SnapCash.Exception.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/SnapCash.Exception.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/SnapCash.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/refint/SnapCash.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/SnapCash.Exception.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Exception/obj/Debug/net8.0/ref/SnapCash.Exception.dll

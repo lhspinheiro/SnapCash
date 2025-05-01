@@ -1,3 +1,5 @@
+using SnapCash.Domain.Enums;
+
 namespace SnapCash.Domain.Entities;
 
 public class Register
@@ -7,9 +9,8 @@ public class Register
     public string CPF { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string Senha { get; set; } = string.Empty;
+    public UserType UserType { get; set; } 
     public decimal Saldo { get; set; }
-
-
     
     public void debitar(decimal valor)
     {

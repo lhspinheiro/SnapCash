@@ -17,3 +17,6 @@
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Application/obj/Debug/net8.0/refint/SnapCash.Application.dll
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Application/obj/Debug/net8.0/SnapCash.Application.pdb
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Application/obj/Debug/net8.0/ref/SnapCash.Application.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Application/obj/Debug/net8.0/SnapCash.Application.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Application/bin/Debug/net8.0/SnapCash.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Application/bin/Debug/net8.0/SnapCash.Exception.pdb

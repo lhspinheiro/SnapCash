@@ -42,9 +42,13 @@ namespace SnapCash.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("id");
 
-                    b.ToTable("Registers");
+                    b.ToTable("Registers", (string)null);
                 });
 
             modelBuilder.Entity("SnapCash.Domain.Entities.Transfer", b =>
@@ -68,7 +72,7 @@ namespace SnapCash.Infrastructure.Migrations
 
                     b.HasIndex("payerId");
 
-                    b.ToTable("Transfers");
+                    b.ToTable("Transfers", (string)null);
                 });
 
             modelBuilder.Entity("SnapCash.Domain.Entities.Transfer", b =>

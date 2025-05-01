@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SnapCash.Exception/1.0.0": {
+        "runtime": {
+          "SnapCash.Exception.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SnapCash.Exception/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

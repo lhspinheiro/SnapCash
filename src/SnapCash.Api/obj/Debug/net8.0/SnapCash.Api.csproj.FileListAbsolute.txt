@@ -295,3 +295,10 @@
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/Microsoft.Extensions.Http.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/FluentValidation.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/obj/Debug/net8.0/SnapCash.Api.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/SnapCash.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Api/bin/Debug/net8.0/SnapCash.Exception.pdb

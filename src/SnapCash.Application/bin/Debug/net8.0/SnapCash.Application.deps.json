@@ -9,9 +9,11 @@
       "SnapCash.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "14.0.0",
+          "FluentValidation": "11.11.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.4",
           "Microsoft.Extensions.Http": "8.0.1",
           "SnapCash.Communication": "1.0.0",
+          "SnapCash.Exception": "1.0.0",
           "SnapCash.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -26,6 +28,14 @@
           "lib/net8.0/AutoMapper.dll": {
             "assemblyVersion": "14.0.0.0",
             "fileVersion": "14.0.0.0"
+          }
+        }
+      },
+      "FluentValidation/11.11.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
           }
         }
       },
@@ -500,6 +510,11 @@
           "SnapCash.Domain.dll": {}
         }
       },
+      "SnapCash.Exception/1.0.0": {
+        "runtime": {
+          "SnapCash.Exception.dll": {}
+        }
+      },
       "SnapCash.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.4",
@@ -524,6 +539,13 @@
       "sha512": "sha512-OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
       "path": "automapper/14.0.0",
       "hashPath": "automapper.14.0.0.nupkg.sha512"
+    },
+    "FluentValidation/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cyIVdQBwSipxWG8MA3Rqox7iNbUNUTK5bfJi9tIdm4CAfH71Oo5ABLP4/QyrUwuakqpUEPGtE43BDddvEehuYw==",
+      "path": "fluentvalidation/11.11.0",
+      "hashPath": "fluentvalidation.11.11.0.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite.Core/9.0.4": {
       "type": "package",
@@ -755,6 +777,11 @@
       "sha512": ""
     },
     "SnapCash.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SnapCash.Exception/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

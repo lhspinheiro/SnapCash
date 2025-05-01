@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using SnapCash.Communication.Request;
 using SnapCash.Communication.Response;
 using SnapCash.Communication.Services;
+using SnapCash.Domain.Enums;
+using SnapCash.Exception;
 using SnapCash.Infrastructure.Data;
 
 
@@ -26,16 +28,27 @@ public class TransferUseCase : ITransferUseCase
        var pagador = await _appDbContext.Registers.FirstOrDefaultAsync(payer => payer.id == request.payerId);
        var recebedor = await _appDbContext.Registers.FirstOrDefaultAsync(payee => payee.id == request.payeeId);
 
+       if (pagador.UserType == UserType.Lojista)
+       {
+           var error = "Lojistas não podem transferir dinheiro";
+           var errorsList = error.Split(',').ToList();
+           throw new ErrorOnValidationException(errorsList);
+       }
+       
        if (pagador.Saldo < request.valor)
        {
-           throw new Exception("Saldo insuficiente");
+           var error = "Saldo Insuficiente";
+           var errorsList = error.Split(',').ToList();
+           throw new ErrorOnValidationException(errorsList);
        }
        
        var auth = await _authorizationService.Authorize();
 
        if (!auth)
        {
-           throw new Exception("não autorizado");
+           var error = "Não autorizado";
+           var errorsList = error.Split(',').ToList();
+           throw new ErrorOnValidationException(errorsList);
        }
        
        pagador.debitar(request.valor);

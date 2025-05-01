@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Converters;
+using SnapCash.Api.Filters;
 using SnapCash.Application;
 using SnapCash.Infrastructure.Data;
 
@@ -12,6 +16,12 @@ builder.Services.AddSwaggerGen();
 //AddScoped 
 builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddApplication();
+
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+        options.SerializerSettings.Converters.Add(new StringEnumConverter()));
+
+builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFIlter)));
 
 var app = builder.Build();
 

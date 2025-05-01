@@ -13,4 +13,9 @@ public class AppDbContext : DbContext
         optionsBuilder.UseSqlite("Data Source=SnapCash.sqlite");
         base.OnConfiguring(optionsBuilder);   
     }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Register>().Property(user => user.UserType).HasConversion<string>();
+    }
 }

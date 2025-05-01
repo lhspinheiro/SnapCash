@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\SnapCash.Communication\SnapCash.Communication.csproj" />
+      <ProjectReference Include="..\SnapCash.Exception\SnapCash.Exception.csproj" />
       <ProjectReference Include="..\SnapCash.Infrastructure\SnapCash.Infrastructure.csproj" />
     </ItemGroup>
 

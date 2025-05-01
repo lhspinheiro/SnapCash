@@ -15,3 +15,4 @@
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/ref/SnapCash.Infrastructure.dll
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Communication.dll
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/bin/Debug/net8.0/SnapCash.Communication.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Infrastructure/obj/Debug/net8.0/SnapCash.Infrastructure.sourcelink.json

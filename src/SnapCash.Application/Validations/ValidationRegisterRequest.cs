@@ -14,5 +14,7 @@ public class ValidationRegisterRequest : AbstractValidator<RegisterRequest>
         RuleFor(senha => senha.Senha.Length).GreaterThanOrEqualTo(6)
             .WithMessage("A senha deve ser maior que 6 caracteres");
         RuleFor(saldo => saldo.Saldo).GreaterThan(0).WithMessage("O valor deve ser maior que 0");
+        RuleFor(type => type.UserType).IsInEnum()
+            .WithName("Tipo de usuário inválido! Selecione o tipo comum ou lojista.");
     }
 }

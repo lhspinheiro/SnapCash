@@ -13,3 +13,4 @@
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/bin/Debug/net8.0/SnapCash.Communication.pdb
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.csproj.AssemblyReference.cache
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.csproj.CopyComplete
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Domain/obj/Debug/net8.0/SnapCash.Domain.sourcelink.json

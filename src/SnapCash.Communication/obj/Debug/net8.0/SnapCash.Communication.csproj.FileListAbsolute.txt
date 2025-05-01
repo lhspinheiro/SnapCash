@@ -9,3 +9,4 @@
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/refint/SnapCash.Communication.dll
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.pdb
 /media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/ref/SnapCash.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/SnapCash/src/SnapCash.Communication/obj/Debug/net8.0/SnapCash.Communication.sourcelink.json

@@ -1,6 +1,8 @@
 using AutoMapper;
+using SnapCash.Application.Validations;
 using SnapCash.Communication.Request;
 using SnapCash.Communication.Response;
+using SnapCash.Exception;
 using SnapCash.Infrastructure.Data;
 
 namespace SnapCash.Application.UseCases.Register;
@@ -17,6 +19,8 @@ public class RegisterUser : IRegisterUser
     }
     public async Task<RegisterResponse> Execute(RegisterRequest request)
     {
+        await Validate(request);
+        
         var entity = _mapper.Map<Domain.Entities.Register>(request);
         
         await _appDbContext.Registers.AddAsync(entity);
@@ -24,4 +28,19 @@ public class RegisterUser : IRegisterUser
         
         return _mapper.Map<RegisterResponse>(entity);
     }
+
+    private async Task Validate(RegisterRequest request)
+    {
+        var validate = new ValidationRegisterRequest();
+        
+        var result = await validate.ValidateAsync(request);
+
+        if (result.IsValid == false)
+        {
+            var errors = result.Errors.Select(x => x.ErrorMessage).ToList();
+
+            throw new ErrorOnValidationException(errors);
+        } 
+    }
+    
 }
