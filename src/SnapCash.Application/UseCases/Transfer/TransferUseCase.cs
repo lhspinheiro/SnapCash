@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using SnapCash.Communication.Request;
 using SnapCash.Communication.Response;
 using SnapCash.Communication.Services;
+using SnapCash.Communication.Services.Notify;
 using SnapCash.Domain.Enums;
 using SnapCash.Exception;
 using SnapCash.Infrastructure.Data;
@@ -15,12 +16,14 @@ public class TransferUseCase : ITransferUseCase
     private readonly AppDbContext _appDbContext;
     private readonly IMapper _mapper;
     private readonly IAuthorizationService _authorizationService;
+    private readonly ISendNotification _sendNotification;
     
-    public TransferUseCase(AppDbContext appDbContext, IMapper mapper, IAuthorizationService authorizationService)
+    public TransferUseCase(AppDbContext appDbContext, IMapper mapper, IAuthorizationService authorizationService, ISendNotification sendNotification)
     {
         _appDbContext = appDbContext;
         _mapper = mapper;
         _authorizationService = authorizationService;
+        _sendNotification = sendNotification;
     }
     public async Task <TransferResponseListJson> Execute(TransferRequest request)
     {
@@ -49,7 +52,7 @@ public class TransferUseCase : ITransferUseCase
             await _appDbContext.SaveChangesAsync();
             
             await transaction.CommitAsync();
-
+            
             return new TransferResponseListJson
             {
                 Pagador = new List<TransferResponse>
@@ -74,7 +77,7 @@ public class TransferUseCase : ITransferUseCase
                 }
             };
         }
-        catch 
+        catch (System.Exception ex)
         {
             await transaction.RollbackAsync();
             throw;
@@ -97,7 +100,7 @@ public class TransferUseCase : ITransferUseCase
         if (!auth)
         { 
             throw new ErrorOnValidationException(new List<string> { "Não autorizado" });
-        }
+        } 
         
         if (pagador == null || recebedor == null)
         {
@@ -107,6 +110,12 @@ public class TransferUseCase : ITransferUseCase
         if (request.payerId == request.payeeId)
         {
             throw new ErrorOnValidationException(new List<string>{"Não é possível realizar uma transferência para si mesmo."});
+        }
+        
+        var sendNotification = await _sendNotification.Send();
+        if (sendNotification.status != "sucess")
+        {
+            throw new ErrorOnValidationException(new List<string> { "Erro ao enviar notificação" });
         }
     }
 }
