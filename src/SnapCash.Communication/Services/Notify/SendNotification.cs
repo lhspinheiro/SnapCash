@@ -17,33 +17,25 @@ public class SendNotification : ISendNotification
 
     public async Task<NotificationResponse> Send()
     {
-        var content = new
-        {
-            user = "cleinte@examble.com",
-            message = "Pagamento recebido com sucesso"
-        };
         try
         {
-            var notification = await _httpClient.PostAsJsonAsync(URL, content);
+            var notification = await _httpClient.PostAsJsonAsync(URL, string.Empty);
             if (notification.IsSuccessStatusCode)
             {
-                Console.WriteLine("Notificação enviada com sucesso");
+                Console.WriteLine("----- Notificação enviada com sucesso -----");
                 return new NotificationResponse
                 {
                     status = "sucess",
                     message = "notificação enviada com sucesso"
                 };
             }
-            else
-            {
-                var result = await notification.Content.ReadFromJsonAsync<NotificationResponse>();
-                return result ?? new NotificationResponse
-                {
-                    status = "erro",
-                    message = "resposta inesperada"
-                };
-            }
             
+            Console.WriteLine("----- Erro ao enviar notificação -----");
+            return new NotificationResponse
+            {
+                status = "erro",
+                message = "erro inesperado"
+            };
         }
         catch (Exception e)
         {
@@ -54,6 +46,5 @@ public class SendNotification : ISendNotification
                 message = $"erro ao conectar com serviço da API {e.Message}"
             };
         }
-        
     }
 }
