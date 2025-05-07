@@ -51,7 +51,10 @@ public class TransferUseCase : ITransferUseCase
             await _appDbContext.Transfers.AddAsync(entity);
             await _appDbContext.SaveChangesAsync();
             
+            var sendNotification = await _sendNotification.Send();
+            
             await transaction.CommitAsync();
+            
             
             return new TransferResponseListJson
             {
@@ -112,10 +115,5 @@ public class TransferUseCase : ITransferUseCase
             throw new ErrorOnValidationException(new List<string>{"Não é possível realizar uma transferência para si mesmo."});
         }
         
-        var sendNotification = await _sendNotification.Send();
-        if (sendNotification.status != "sucess")
-        {
-            throw new ErrorOnValidationException(new List<string> { "Erro ao enviar notificação" });
-        }
     }
 }

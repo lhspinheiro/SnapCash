@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SnapCash.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f83694dc6f1f0c3232befd581da6fd3f35e9dd59")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2761f42cba790a60937740513546ed62bf19b21")]
 [assembly: System.Reflection.AssemblyProductAttribute("SnapCash.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SnapCash.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
