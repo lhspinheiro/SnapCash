@@ -55,4 +55,3 @@ public class RegisterUser : IRegisterUser
             throw new ErrorOnValidationException(new List<string>{"CPF/CNPJ já cadastrado!"});
         }
     }
-}

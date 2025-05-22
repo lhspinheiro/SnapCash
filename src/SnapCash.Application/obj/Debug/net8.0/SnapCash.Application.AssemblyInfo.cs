@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SnapCash.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3678108c4c5d6397e900182aa7986c77f020f9ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d26d25adf52511be57909ffe0230a7dfd81fd90")]
 [assembly: System.Reflection.AssemblyProductAttribute("SnapCash.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SnapCash.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
