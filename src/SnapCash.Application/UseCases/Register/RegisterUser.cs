@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SnapCash.Application.Security;
 using SnapCash.Application.Validations;
 using SnapCash.Communication.Request;
@@ -46,6 +47,12 @@ public class RegisterUser : IRegisterUser
 
             throw new ErrorOnValidationException(errors);
         } 
+        
+        var userExist = await _appDbContext.Registers.AnyAsync(validation => validation.CPF.Equals(request.CPF));
+
+        if (userExist)
+        {
+            throw new ErrorOnValidationException(new List<string>{"CPF/CNPJ já cadastrado!"});
+        }
     }
-    
 }
