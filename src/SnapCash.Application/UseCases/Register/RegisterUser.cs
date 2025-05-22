@@ -1,4 +1,5 @@
 using AutoMapper;
+using SnapCash.Application.Security;
 using SnapCash.Application.Validations;
 using SnapCash.Communication.Request;
 using SnapCash.Communication.Response;
@@ -11,7 +12,7 @@ public class RegisterUser : IRegisterUser
 {
     private readonly AppDbContext _appDbContext;
     private readonly IMapper _mapper;
-
+    
     public RegisterUser(AppDbContext appDbContext, IMapper mapper)
     {
         _appDbContext = appDbContext;
@@ -21,7 +22,11 @@ public class RegisterUser : IRegisterUser
     {
         await Validate(request);
         
+        var encrypt = new BCryptAlgoritm();
+        
         var entity = _mapper.Map<Domain.Entities.Register>(request);
+        entity.Senha = encrypt.HashPassword(request.Senha);
+        
         
         await _appDbContext.Registers.AddAsync(entity);
         await _appDbContext.SaveChangesAsync();
