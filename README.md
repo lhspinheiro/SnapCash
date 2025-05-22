@@ -9,7 +9,8 @@ Existe 2 tipos de usuários:
 
 Ambos possuem carteiras digitais, mas somente os usuários comuns conseguem realizar transferências. 
 
-Todas as informações são guardadas de forma segura em um banco de dados SQLite com EntityFramework atuando como um ORM (Object-Relational-Mapper), simplificando e facilitando as interações com o banco de dados diretamente com objetos .NET
+Todas as informações são guardadas de forma segura em um banco de dados SQLite com EntityFramework atuando como um ORM (Object-Relational-Mapper), simplificando e facilitando as interações com o banco de dados diretamente com objetos .NET.
+
 No momento do registro, as senhas são criptografadas e armazenadas de maneira segura no banco de dados, garantia a segurança e integridade dos dados dos usuários.
 
 A arquitetura da aplicação se baseaia-se em RESTFul.
