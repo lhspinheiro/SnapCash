@@ -1,9 +1,9 @@
 ##  💸 API de transferências bancárias 💰
 
-API desenvolvida em C# com o .NET 8 utilizando o framework ASP.NET Core, neste projeto foram abordado os princípios do **Domain-Driven Design (DDD)**.
+API desenvolvida em C# com o .NET 8 utilizando o framework ASP.NET Core, neste projeto foram abordados os princípios do **Domain-Driven Design (DDD)**.
 A aplicação permite pagamentos de forma simplificada, possibilitando depósitos e transferências de dinheiro entre usuários. 
 
-Existe 2 tipos de usuários: 
+Existem 2 tipos de usuários: 
 - **Comuns**: pode enviar e receber transferências
 - **Lojistas**: apenas recebe transferências.
 
@@ -13,9 +13,9 @@ Todas as informações são guardadas de forma segura em um banco de dados SQLit
 
 No momento do registro, as senhas são criptografadas e armazenadas de maneira segura no banco de dados, garantindo a segurança e integridade dos dados dos usuários.
 
-A arquitetura da aplicação baseaia-se em RESTFul.
+A arquitetura da aplicação baseia-se em RESTful.
 
-## 🔗 Endpoints
+⚙️ 🔗 Endpoints
 
 ```
 POST /RegisterUser
@@ -39,4 +39,18 @@ POST /transfer
   "payee": 0
 }
 ```
+
+## ⚙️ Comportamento da aplicação 
+
+Antes da transferência ser finalizada, a aplicação consulta um serviço autorizador externo.
+- Mock utilizado: GET https://util.devi.tools/api/v2/authorize.
+- Se a autorização falhar, a transferência é cancelada.
+
+A operação de transferência é uma transação, ou seja, em caso de falhas durante o processo, a transação é revertida automaticamente e o valor volta para a carteira do usuário pagador.
+
+Após o recebimento da transação, o usuário (ou lojista) recebe uma notificação via serviço de terceiros
+- Mock utilizado: POST https://util.devi.tools/api/v1/notify.
+- Caso o serviço de notificação esteja indisponível ou instável, a transação é concluída normalmente, a falha não impede a finalização da transação.
+
+
 
