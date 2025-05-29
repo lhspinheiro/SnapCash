@@ -52,5 +52,29 @@ Após o recebimento da transação, o usuário (ou lojista) recebe uma notifica�
 - Mock utilizado: POST https://util.devi.tools/api/v1/notify.
 - Caso o serviço de notificação esteja indisponível ou instável, a transação é concluída normalmente, a falha não impede a finalização da transação.
 
+### Instalação 
+
+1. Clone o repositório: 
+    ```sh
+    git clone https://github.com/lhspinheiro/SnapCash.git
+     ```
+2. Execute o seguinte comando no terminal:
+    ```sh
+    docker compose up -d
+     ```
+3. Acesse a aplicação em:
+    ```sh
+    http://localhost:5000 
+     ```
+4. Acesse o Swagger ui:
+    ```sh
+    http://localhost:5000/Swagger 
+     ```
+
+ 
+
+
+
+
 
 
