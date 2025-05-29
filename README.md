@@ -52,7 +52,19 @@ Após o recebimento da transação, o usuário (ou lojista) recebe uma notifica�
 - Mock utilizado: POST https://util.devi.tools/api/v1/notify.
 - Caso o serviço de notificação esteja indisponível ou instável, a transação é concluída normalmente, a falha não impede a finalização da transação.
 
-### Instalação 
+
+## 👨‍💻 Stacks
+
+![icon-dot-net]
+![SQLite]
+![icon-swagger]
+![icon-rider]
+![icon-vscode]
+![icon-docker]
+![icon-ubuntu]
+
+
+## Instalação 
 
 1. Clone o repositório: 
     ```sh
@@ -71,7 +83,15 @@ Após o recebimento da transação, o usuário (ou lojista) recebe uma notifica�
     http://localhost:5000/Swagger 
      ```
 
- 
+ <!-- Icons -->
+[icon-dot-net]: https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff&style=for-the-badge
+[SQLite]: https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=fff&style=for-the-badge
+[icon-swagger]: https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=000&style=for-the-badge
+[icon-rider]: https://img.shields.io/badge/Rider-000?logo=rider&logoColor=fff&style=for-the-badge
+[icon-vscode]: https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
+[icon-ubuntu]: https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=fff&style=for-the-badge
+[icon-docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+
 
 
 
