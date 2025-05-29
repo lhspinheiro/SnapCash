@@ -4,6 +4,7 @@ using Newtonsoft.Json.Converters;
 using SnapCash.Api.Filters;
 using SnapCash.Application;
 using SnapCash.Infrastructure.Data;
+using SnapCash.Infrastructure.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,4 +39,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+await MIgrateDataBase();
+
 app.Run();
+
+async Task MIgrateDataBase()
+{
+    await using var scope  = app.Services.CreateAsyncScope();
+    
+    await DataBaseMigration.MigrateDataBase(scope.ServiceProvider);
+}
