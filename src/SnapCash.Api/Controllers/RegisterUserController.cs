@@ -10,7 +10,7 @@ namespace SnapCash.Api.Controllers
     public class RegisterUserController : ControllerBase
     {
         [HttpPost]
-        [ProducesResponseType(typeof(RegisterResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(RegisterResponse), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Register([FromServices] IRegisterUser useCase, [FromBody] RegisterRequest request)
         {
@@ -18,7 +18,6 @@ namespace SnapCash.Api.Controllers
 
             return Created(string.Empty, response);
         }
-        
         
     }
 }

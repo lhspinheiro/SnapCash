@@ -17,7 +17,7 @@ namespace SnapCash.Api.Controllers
         {
             var response = await useCase.Execute(request);
             
-            return Created(string.Empty, response);
+            return Ok(response);
         }
     }
 }
