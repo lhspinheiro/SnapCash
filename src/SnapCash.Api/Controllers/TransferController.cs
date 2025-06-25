@@ -11,6 +11,7 @@ namespace SnapCash.Api.Controllers
     public class TransferController : ControllerBase
     {
         [ProducesResponseType(typeof(TransferResponseListJson), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseErrorMessages), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPost]
         public async Task<IActionResult> Transfer([FromServices] ITransferUseCase useCase, [FromBody] TransferRequest request)

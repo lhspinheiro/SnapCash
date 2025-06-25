@@ -1,7 +1,7 @@
 using System.Text.Json;
 using SnapCash.Communication.Response;
 
-namespace SnapCash.Communication.Services;
+namespace SnapCash.Communication.Services.Authorization;
 
 public class AuthorizationService : IAuthorizationService
 {

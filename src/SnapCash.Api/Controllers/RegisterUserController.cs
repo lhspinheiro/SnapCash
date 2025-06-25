@@ -12,6 +12,7 @@ namespace SnapCash.Api.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(RegisterResponse), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        
         public async Task<IActionResult> Register([FromServices] IRegisterUser useCase, [FromBody] RegisterRequest request)
         {
             var response = await useCase.Execute(request);

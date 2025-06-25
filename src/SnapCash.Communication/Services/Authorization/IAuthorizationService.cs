@@ -1,4 +1,4 @@
-namespace SnapCash.Communication.Services;
+namespace SnapCash.Communication.Services.Authorization;
 
 public interface IAuthorizationService
 {

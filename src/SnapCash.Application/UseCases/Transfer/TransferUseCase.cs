@@ -2,12 +2,11 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using SnapCash.Communication.Request;
 using SnapCash.Communication.Response;
-using SnapCash.Communication.Services;
+using SnapCash.Communication.Services.Authorization;
 using SnapCash.Communication.Services.Notify;
 using SnapCash.Domain.Enums;
 using SnapCash.Exception;
 using SnapCash.Infrastructure.Data;
-
 
 namespace SnapCash.Application.UseCases.Transfer;
 

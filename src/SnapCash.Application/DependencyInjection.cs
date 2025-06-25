@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SnapCash.Application.AutoMapper;
 using SnapCash.Application.UseCases.Register;
 using SnapCash.Application.UseCases.Transfer;
-using SnapCash.Communication.Services;
+using SnapCash.Communication.Services.Authorization;
 using SnapCash.Communication.Services.Notify;
 
 namespace SnapCash.Application;
